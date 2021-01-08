@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Serialization to base64</title>
+</head>
+<body>
+    <p>Result: <label>
+        <textarea cols="120" rows="10" th:text="${value}"></textarea>
+    </label></p>
+    <a th:href="@{/serialization}">Serialization</a>
+    <a th:href="@{/deserialization}">Deserialization</a>
+</body>
+</html>

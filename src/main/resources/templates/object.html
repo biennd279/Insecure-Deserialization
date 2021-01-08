@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Deserialization from base64</title>
+</head>
+<body>
+    <form method="post" th:object="${student}">
+        <p>User name: <label>
+            <input type="text" th:value="*{username}">
+        </label></p>
+        <p>Email: <label>
+            <input type="email" th:value="*{email}">
+        </label></p>
+        <p>Year : <label>
+            <input type="text" th:value="*{year}">
+        </label></p>
+        <p>Gender: <label>
+            <input type="text" th:value="*{gender}">
+        </label></p>
+        <a th:href="@{/serialization}">Serialization</a>
+        <a th:href="@{/deserialization}">Deserialization</a>
+    </form>
+</body>
+</html>
